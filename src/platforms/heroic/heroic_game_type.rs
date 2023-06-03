@@ -51,7 +51,7 @@ impl From<HeroicGameType> for ShortcutOwned {
                 app_name,
                 install_mode,
             } => {
-                let launch_parameter = format!("heroic://launch/{app_name}");
+                let launch_parameter = format!("heroic://launch/legendary/{app_name}");
                 let (exe, parameter) = match install_mode {
                     InstallationMode::FlatPak => (
                         "flatpak",
